@@ -7,8 +7,8 @@ function App() {
   const [balenVote, setBalenVote] = useState(0);
 
   const moveButton = () => {
-    const x = Math.random() * 300 - 150;
-    const y = Math.random() * 300 - 150;
+    const x = Math.random() * 800 - 400;
+    const y = Math.random() * 200 - 100;
 
     setPosition({ x, y });
   };
@@ -54,9 +54,9 @@ function App() {
               style={{
                 transform: `translate(${position.x}px, ${position.y}px)`,
               }}
-              className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 md:py-2 md:px-6 rounded-lg mb-2 text-sm md:text-base transition"
+              className="bg-yellow-600 cursor-pointer hover:bg-yellow-700 text-white font-bold py-2 px-4 md:py-2 md:px-6 rounded-lg mb-2 text-sm md:text-base transition"
             >
-              Vote Chor KP
+              Vote KP Chor 
             </button>
             <p className="text-white text-lg md:text-2xl lg:text-3xl font-bold">0</p>
           </div>
